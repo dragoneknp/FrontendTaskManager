@@ -1,0 +1,69 @@
+.container {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 350px;
+    height: 150px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 12px 0;
+}
+
+.category {
+    padding: 4px 16px;
+    border-radius: 18px;
+    background: rgba(36, 151, 86, 0.2);
+}
+
+.description {
+    font-weight: 500;
+    font-size: 16px;
+
+    color: #4f4f4f;
+}
+
+.footer {
+    padding: 4px 0;
+    color: #828282;
+    margin: 12px 0 0 0;
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 24px;
+    grid-template-columns: 2fr 1fr 1fr 3fr;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+@mixin place-icon($icon_url) {
+    position: relative;
+    padding: 0 0 0 24px;
+
+    &::before {
+        content: url($icon_url);
+        position: absolute;
+        left: 0;
+        top: 50%;
+        height: 16px;
+        width: 16px;
+        transform: translate(0, -50%);
+    }
+}
+
+.date {
+    @include place-icon("./assets/calendar.svg");
+}
+
+.comments {
+    @include place-icon("./assets/message.svg");
+}
+
+.files {
+    @include place-icon("./assets/file.svg");
+}
+
+.avatar {
+    text-align: right;
+}

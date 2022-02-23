@@ -1,0 +1,40 @@
+.container {
+    width: 350px;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    right: 16px;
+    bottom: 32px;
+    transition: 0.3s ease;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.visible {
+    visibility: visible;
+    transition: 0.3s ease;
+    opacity: 1;
+}
+
+.notVisible {
+    visibility: hidden;
+    transition: 0.3s ease;
+    opacity: 0;
+}
+
+.cross {
+    height: 8px;
+    width: 8px;
+}
+
+.icon {
+    align-self: center;
+    width: 24px;
+    height: 24px;
+}

@@ -1,0 +1,30 @@
+.container {
+    width: 10em;
+}
+.progress {
+    // background: rgba(70, 189, 132, 0.2);
+    border-radius: 100px;
+    position: relative;
+    display: flex;
+    height: 0.5em;
+    width: 10em;
+}
+
+.progress-value {
+    position: absolute;
+    border-radius: 100px;
+    // background: rgb(70, 189, 132);
+    z-index: 2;
+    height: 0.5em;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 12px 0;
+}
+.title {
+    font-weight: 600;
+}
+.status {
+    color: #9c9c9c;
+}

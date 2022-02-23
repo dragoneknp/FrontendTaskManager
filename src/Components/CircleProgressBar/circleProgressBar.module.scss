@@ -1,0 +1,41 @@
+.circle-big {
+    position: relative;
+    width: 180px;
+    height: 180px;
+}
+
+.circle-big svg {
+    width: 180px;
+    height: 180px;
+}
+
+.circle-big .bg {
+    fill: none;
+    stroke-width: 6px;
+    stroke: #bdc2cb;
+}
+
+.circle-big .progress {
+    fill: none;
+    stroke-width: 8px;
+    stroke: #38976a;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
+
+.circle-big .text {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translate(0, -50%);
+    color: #38976a;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 700;
+}
+.small {
+    margin: 16px 0 0 0;
+    color: #bdc2cb;
+    font-size: 14px;
+}
