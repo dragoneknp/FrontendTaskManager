@@ -1,6 +1,6 @@
 import styles from "./alert.module.scss";
 
-import cross from "./assets/cross.svg";
+import cross from "../../Assets/cross.svg";
 import { AlertTypes } from "../../types/types";
 import { useState } from "react";
 import { alertSwitch } from "../../Utils/alertTypes";

@@ -5,6 +5,7 @@ import LineProgressBar from "../../Components/LineProgressBar/lineProgressBar";
 import { AlertTypes, TaskCardProps } from "../../types/types";
 import WeeklyProgress from "../../Components/WeeklyProgress/weeklyProgress";
 import TaskCard from "../../Components/TaskCard/taskCard";
+import TaskCardForm from "../../Components/TaskCardForm/taskCardForm";
 
 const mock: TaskCardProps = {
     category: "Research",
@@ -25,6 +26,7 @@ const Home = () => {
 
             {/* <WeeklyProgress /> */}
             <Alert type={AlertTypes.info} />
+            <TaskCardForm />
             {/* <LineProgressBar
                 maxValue={8}
                 currentValue={6}

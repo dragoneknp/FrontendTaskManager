@@ -4,3 +4,114 @@
     padding: 20px;
     width: 350px;
 }
+.header {
+    font-weight: 600;
+    margin: 0 0 16px 0;
+}
+.input {
+    & textarea {
+        width: 100%;
+        height: 150px;
+        padding: 12px 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: #f8f8f8;
+        resize: none;
+        transition: 0.3s ease;
+        outline: none;
+        &:focus {
+            transition: 0.3s ease;
+            border: 1px solid #7784ee;
+        }
+    }
+}
+
+.categories {
+    position: relative;
+    min-height: 28px;
+    margin: 16px 0;
+    padding: 0 36px;
+    &::before {
+        content: url("./Assets/tag.svg");
+        position: absolute;
+        left: 0;
+        height: 24px;
+        width: 24px;
+    }
+}
+
+.add {
+    &:before {
+        content: url("./Assets/add.svg");
+        position: absolute;
+        right: 0;
+        height: 24px;
+        width: 24px;
+    }
+}
+
+.form {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+    position: absolute;
+    background: rgba(209, 209, 209, 0.6);
+    border-radius: 8px;
+    width: calc(100% - 72px);
+    left: 50%;
+    display: flex;
+    justify-content: space-between;
+    transform: translate(-50%, 0);
+    top: 0;
+    z-index: 5;
+    & input {
+        padding: 4px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        transition: 0.3s ease;
+        outline: none;
+        &:focus {
+            transition: 0.3s ease;
+            border: 1px solid #7784ee;
+        }
+    }
+    & button {
+        padding: 4px 12px;
+        border-radius: 8px;
+        width: 100%;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        transition: 0.3s ease-in;
+        &:hover {
+            transition: 0.3s ease-in;
+            background-color: #eaeef6;
+            border: 1px solid #7784ee;
+            color: #7784ee;
+        }
+        &:active {
+            transition: 0.3s ease-in;
+            background-color: #d2d7ff;
+            color: #727fe3;
+            border: none;
+        }
+    }
+}
+.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s ease;
+}
+
+.categoryList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 8px;
+}
+.category {
+    text-align: center;
+    padding: 4px 16px;
+    border-radius: 18px;
+    background: rgba(36, 151, 86, 0.2);
+}
