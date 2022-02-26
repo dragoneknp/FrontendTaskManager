@@ -3,8 +3,22 @@
     top: 0;
     left: 0;
     bottom: 0;
+    z-index: 99;
     width: 200px;
-    background: #a8a1a1;
+    background: #f7f8f8; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #acbb78,
+        #f7f8f8
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #acbb78,
+        #f7f8f8
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-box-shadow: 16px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 16px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 16px 0px 8px 0px rgba(34, 60, 80, 0.2);
 }
 
 .navbar {

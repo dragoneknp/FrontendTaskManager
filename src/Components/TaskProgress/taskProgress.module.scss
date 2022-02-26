@@ -1,0 +1,15 @@
+.progress {
+    background: #fff;
+    width: 350px;
+    padding: 32px;
+    border-radius: 8px;
+}
+.header {
+    font-size: 28px;
+    margin: 0 0 24px 0;
+}
+.progressItem {
+    &:not(:last-child) {
+        margin: 0 0 28px 0;
+    }
+}

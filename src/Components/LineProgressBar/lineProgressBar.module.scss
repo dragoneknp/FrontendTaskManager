@@ -1,13 +1,11 @@
-.container {
-    width: 10em;
-}
+
 .progress {
     // background: rgba(70, 189, 132, 0.2);
     border-radius: 100px;
     position: relative;
     display: flex;
     height: 0.5em;
-    width: 10em;
+    width: 100%;
 }
 
 .progress-value {

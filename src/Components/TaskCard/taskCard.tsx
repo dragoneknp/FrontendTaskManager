@@ -2,7 +2,7 @@ import { TaskCardProps } from "../../types/types";
 import styles from "./taskCard.module.scss";
 import more from "../../Assets/more.svg";
 const TaskCard = ({
-    category,
+    tags,
     description,
     date,
     comments,
@@ -12,7 +12,14 @@ const TaskCard = ({
     return (
         <div className={styles.container}>
             <div className={styles.header}>
-                <div className={styles.category}>{category}</div>
+                <div className={styles.tags}>
+                    {tags.map((tag) => (
+                        <div key={tag} className={styles.tag}>
+                            {tag}
+                        </div>
+                    ))}
+                </div>
+
                 <div className={styles.edit}>
                     <img src={more} />
                 </div>
